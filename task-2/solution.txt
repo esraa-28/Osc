@@ -1,0 +1,21 @@
+git config --global user.name "EsraaTaha"
+git config --global user.email etaha0e@gmail.com
+cd '/home/EsraaTaha'
+git clone https://github.com/esraa-28/Osc.git
+cd Osc
+mkdir task-2
+cd task-2
+touch greeting.txt
+echo "hello world" > greeting.txt
+git add greeting.txt
+git commit -m "add greeting"
+git branch intro
+git switch intro
+echo "I love Git" >> greeting.txt
+git add greeting.txt
+git commit -m "i love git"
+git switch main
+git merge intro
+git tag v1
+git push origin main
+git push origin v1
